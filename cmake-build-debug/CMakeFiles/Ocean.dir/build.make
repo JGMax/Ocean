@@ -89,19 +89,109 @@ CMakeFiles/Ocean.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ocean.dir/main.cpp.s"
 	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\main.cpp -o CMakeFiles\Ocean.dir\main.cpp.s
 
+CMakeFiles/Ocean.dir/Cell.cpp.obj: CMakeFiles/Ocean.dir/flags.make
+CMakeFiles/Ocean.dir/Cell.cpp.obj: ../Cell.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Ocean.dir/Cell.cpp.obj"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Ocean.dir\Cell.cpp.obj -c C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Cell.cpp
+
+CMakeFiles/Ocean.dir/Cell.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ocean.dir/Cell.cpp.i"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Cell.cpp > CMakeFiles\Ocean.dir\Cell.cpp.i
+
+CMakeFiles/Ocean.dir/Cell.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ocean.dir/Cell.cpp.s"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Cell.cpp -o CMakeFiles\Ocean.dir\Cell.cpp.s
+
+CMakeFiles/Ocean.dir/Stone.cpp.obj: CMakeFiles/Ocean.dir/flags.make
+CMakeFiles/Ocean.dir/Stone.cpp.obj: ../Stone.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Ocean.dir/Stone.cpp.obj"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Ocean.dir\Stone.cpp.obj -c C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Stone.cpp
+
+CMakeFiles/Ocean.dir/Stone.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ocean.dir/Stone.cpp.i"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Stone.cpp > CMakeFiles\Ocean.dir\Stone.cpp.i
+
+CMakeFiles/Ocean.dir/Stone.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ocean.dir/Stone.cpp.s"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Stone.cpp -o CMakeFiles\Ocean.dir\Stone.cpp.s
+
+CMakeFiles/Ocean.dir/Prey.cpp.obj: CMakeFiles/Ocean.dir/flags.make
+CMakeFiles/Ocean.dir/Prey.cpp.obj: ../Prey.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Ocean.dir/Prey.cpp.obj"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Ocean.dir\Prey.cpp.obj -c C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Prey.cpp
+
+CMakeFiles/Ocean.dir/Prey.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ocean.dir/Prey.cpp.i"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Prey.cpp > CMakeFiles\Ocean.dir\Prey.cpp.i
+
+CMakeFiles/Ocean.dir/Prey.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ocean.dir/Prey.cpp.s"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Prey.cpp -o CMakeFiles\Ocean.dir\Prey.cpp.s
+
+CMakeFiles/Ocean.dir/Predator.cpp.obj: CMakeFiles/Ocean.dir/flags.make
+CMakeFiles/Ocean.dir/Predator.cpp.obj: ../Predator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Ocean.dir/Predator.cpp.obj"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Ocean.dir\Predator.cpp.obj -c C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Predator.cpp
+
+CMakeFiles/Ocean.dir/Predator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ocean.dir/Predator.cpp.i"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Predator.cpp > CMakeFiles\Ocean.dir\Predator.cpp.i
+
+CMakeFiles/Ocean.dir/Predator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ocean.dir/Predator.cpp.s"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Predator.cpp -o CMakeFiles\Ocean.dir\Predator.cpp.s
+
+CMakeFiles/Ocean.dir/Ocean.cpp.obj: CMakeFiles/Ocean.dir/flags.make
+CMakeFiles/Ocean.dir/Ocean.cpp.obj: ../Ocean.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Ocean.dir/Ocean.cpp.obj"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Ocean.dir\Ocean.cpp.obj -c C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Ocean.cpp
+
+CMakeFiles/Ocean.dir/Ocean.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ocean.dir/Ocean.cpp.i"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Ocean.cpp > CMakeFiles\Ocean.dir\Ocean.cpp.i
+
+CMakeFiles/Ocean.dir/Ocean.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ocean.dir/Ocean.cpp.s"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Ocean.cpp -o CMakeFiles\Ocean.dir\Ocean.cpp.s
+
+CMakeFiles/Ocean.dir/Object.cpp.obj: CMakeFiles/Ocean.dir/flags.make
+CMakeFiles/Ocean.dir/Object.cpp.obj: ../Object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Ocean.dir/Object.cpp.obj"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Ocean.dir\Object.cpp.obj -c C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Object.cpp
+
+CMakeFiles/Ocean.dir/Object.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ocean.dir/Object.cpp.i"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Object.cpp > CMakeFiles\Ocean.dir\Object.cpp.i
+
+CMakeFiles/Ocean.dir/Object.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ocean.dir/Object.cpp.s"
+	C:\Users\WorkSpace\AllProjects\Plugins\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\Object.cpp -o CMakeFiles\Ocean.dir\Object.cpp.s
+
 # Object files for target Ocean
 Ocean_OBJECTS = \
-"CMakeFiles/Ocean.dir/main.cpp.obj"
+"CMakeFiles/Ocean.dir/main.cpp.obj" \
+"CMakeFiles/Ocean.dir/Cell.cpp.obj" \
+"CMakeFiles/Ocean.dir/Stone.cpp.obj" \
+"CMakeFiles/Ocean.dir/Prey.cpp.obj" \
+"CMakeFiles/Ocean.dir/Predator.cpp.obj" \
+"CMakeFiles/Ocean.dir/Ocean.cpp.obj" \
+"CMakeFiles/Ocean.dir/Object.cpp.obj"
 
 # External object files for target Ocean
 Ocean_EXTERNAL_OBJECTS =
 
 Ocean.exe: CMakeFiles/Ocean.dir/main.cpp.obj
+Ocean.exe: CMakeFiles/Ocean.dir/Cell.cpp.obj
+Ocean.exe: CMakeFiles/Ocean.dir/Stone.cpp.obj
+Ocean.exe: CMakeFiles/Ocean.dir/Prey.cpp.obj
+Ocean.exe: CMakeFiles/Ocean.dir/Predator.cpp.obj
+Ocean.exe: CMakeFiles/Ocean.dir/Ocean.cpp.obj
+Ocean.exe: CMakeFiles/Ocean.dir/Object.cpp.obj
 Ocean.exe: CMakeFiles/Ocean.dir/build.make
 Ocean.exe: CMakeFiles/Ocean.dir/linklibs.rsp
 Ocean.exe: CMakeFiles/Ocean.dir/objects1.rsp
 Ocean.exe: CMakeFiles/Ocean.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Ocean.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\WorkSpace\AllProjects\CLionProjects\Ocean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Ocean.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Ocean.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

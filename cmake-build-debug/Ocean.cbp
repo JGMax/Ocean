@@ -82,6 +82,45 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/Cell.cpp">
+			<Option target="Ocean"/>
+		</Unit>
+		<Unit filename="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/Cell.h">
+			<Option target="Ocean"/>
+		</Unit>
+		<Unit filename="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/Common.h">
+			<Option target="Ocean"/>
+		</Unit>
+		<Unit filename="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/Object.cpp">
+			<Option target="Ocean"/>
+		</Unit>
+		<Unit filename="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/Object.h">
+			<Option target="Ocean"/>
+		</Unit>
+		<Unit filename="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/Ocean.cpp">
+			<Option target="Ocean"/>
+		</Unit>
+		<Unit filename="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/Ocean.h">
+			<Option target="Ocean"/>
+		</Unit>
+		<Unit filename="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/Predator.cpp">
+			<Option target="Ocean"/>
+		</Unit>
+		<Unit filename="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/Predator.h">
+			<Option target="Ocean"/>
+		</Unit>
+		<Unit filename="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/Prey.cpp">
+			<Option target="Ocean"/>
+		</Unit>
+		<Unit filename="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/Prey.h">
+			<Option target="Ocean"/>
+		</Unit>
+		<Unit filename="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/Stone.cpp">
+			<Option target="Ocean"/>
+		</Unit>
+		<Unit filename="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/Stone.h">
+			<Option target="Ocean"/>
+		</Unit>
 		<Unit filename="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/main.cpp">
 			<Option target="Ocean"/>
 		</Unit>

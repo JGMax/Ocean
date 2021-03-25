@@ -142,6 +142,168 @@ Ocean/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/build
 .PHONY : Ocean/fast
 
+Cell.obj: Cell.cpp.obj
+
+.PHONY : Cell.obj
+
+# target to build an object file
+Cell.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Cell.cpp.obj
+.PHONY : Cell.cpp.obj
+
+Cell.i: Cell.cpp.i
+
+.PHONY : Cell.i
+
+# target to preprocess a source file
+Cell.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Cell.cpp.i
+.PHONY : Cell.cpp.i
+
+Cell.s: Cell.cpp.s
+
+.PHONY : Cell.s
+
+# target to generate assembly for a file
+Cell.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Cell.cpp.s
+.PHONY : Cell.cpp.s
+
+Object.obj: Object.cpp.obj
+
+.PHONY : Object.obj
+
+# target to build an object file
+Object.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Object.cpp.obj
+.PHONY : Object.cpp.obj
+
+Object.i: Object.cpp.i
+
+.PHONY : Object.i
+
+# target to preprocess a source file
+Object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Object.cpp.i
+.PHONY : Object.cpp.i
+
+Object.s: Object.cpp.s
+
+.PHONY : Object.s
+
+# target to generate assembly for a file
+Object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Object.cpp.s
+.PHONY : Object.cpp.s
+
+Ocean.obj: Ocean.cpp.obj
+
+.PHONY : Ocean.obj
+
+# target to build an object file
+Ocean.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Ocean.cpp.obj
+.PHONY : Ocean.cpp.obj
+
+Ocean.i: Ocean.cpp.i
+
+.PHONY : Ocean.i
+
+# target to preprocess a source file
+Ocean.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Ocean.cpp.i
+.PHONY : Ocean.cpp.i
+
+Ocean.s: Ocean.cpp.s
+
+.PHONY : Ocean.s
+
+# target to generate assembly for a file
+Ocean.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Ocean.cpp.s
+.PHONY : Ocean.cpp.s
+
+Predator.obj: Predator.cpp.obj
+
+.PHONY : Predator.obj
+
+# target to build an object file
+Predator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Predator.cpp.obj
+.PHONY : Predator.cpp.obj
+
+Predator.i: Predator.cpp.i
+
+.PHONY : Predator.i
+
+# target to preprocess a source file
+Predator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Predator.cpp.i
+.PHONY : Predator.cpp.i
+
+Predator.s: Predator.cpp.s
+
+.PHONY : Predator.s
+
+# target to generate assembly for a file
+Predator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Predator.cpp.s
+.PHONY : Predator.cpp.s
+
+Prey.obj: Prey.cpp.obj
+
+.PHONY : Prey.obj
+
+# target to build an object file
+Prey.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Prey.cpp.obj
+.PHONY : Prey.cpp.obj
+
+Prey.i: Prey.cpp.i
+
+.PHONY : Prey.i
+
+# target to preprocess a source file
+Prey.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Prey.cpp.i
+.PHONY : Prey.cpp.i
+
+Prey.s: Prey.cpp.s
+
+.PHONY : Prey.s
+
+# target to generate assembly for a file
+Prey.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Prey.cpp.s
+.PHONY : Prey.cpp.s
+
+Stone.obj: Stone.cpp.obj
+
+.PHONY : Stone.obj
+
+# target to build an object file
+Stone.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Stone.cpp.obj
+.PHONY : Stone.cpp.obj
+
+Stone.i: Stone.cpp.i
+
+.PHONY : Stone.i
+
+# target to preprocess a source file
+Stone.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Stone.cpp.i
+.PHONY : Stone.cpp.i
+
+Stone.s: Stone.cpp.s
+
+.PHONY : Stone.s
+
+# target to generate assembly for a file
+Stone.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ocean.dir\build.make CMakeFiles/Ocean.dir/Stone.cpp.s
+.PHONY : Stone.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -178,6 +340,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Ocean
+	@echo ... Cell.obj
+	@echo ... Cell.i
+	@echo ... Cell.s
+	@echo ... Object.obj
+	@echo ... Object.i
+	@echo ... Object.s
+	@echo ... Ocean.obj
+	@echo ... Ocean.i
+	@echo ... Ocean.s
+	@echo ... Predator.obj
+	@echo ... Predator.i
+	@echo ... Predator.s
+	@echo ... Prey.obj
+	@echo ... Prey.i
+	@echo ... Prey.s
+	@echo ... Stone.obj
+	@echo ... Stone.i
+	@echo ... Stone.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

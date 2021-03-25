@@ -1,4 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Ocean.dir/Cell.cpp.obj"
+  "CMakeFiles/Ocean.dir/Object.cpp.obj"
+  "CMakeFiles/Ocean.dir/Ocean.cpp.obj"
+  "CMakeFiles/Ocean.dir/Predator.cpp.obj"
+  "CMakeFiles/Ocean.dir/Prey.cpp.obj"
+  "CMakeFiles/Ocean.dir/Stone.cpp.obj"
   "CMakeFiles/Ocean.dir/main.cpp.obj"
   "Ocean.exe"
   "Ocean.exe.manifest"
