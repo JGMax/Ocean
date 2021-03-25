@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Ocean"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Ocean">
+				<Option output="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Ocean.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/include"/>
+					<Add directory="c:\users\workspace\allprojects\plugins\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
+					<Add directory="c:\users\workspace\allprojects\plugins\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/i686-w64-mingw32"/>
+					<Add directory="c:\users\workspace\allprojects\plugins\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
+					<Add directory="c:\users\workspace\allprojects\plugins\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/include"/>
+					<Add directory="c:\users\workspace\allprojects\plugins\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/include-fixed"/>
+					<Add directory="c:\users\workspace\allprojects\plugins\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ocean"/>
+					<CompileFile command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Ocean/fast">
+				<Option output="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Ocean.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/include"/>
+					<Add directory="c:\users\workspace\allprojects\plugins\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
+					<Add directory="c:\users\workspace\allprojects\plugins\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/i686-w64-mingw32"/>
+					<Add directory="c:\users\workspace\allprojects\plugins\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
+					<Add directory="c:\users\workspace\allprojects\plugins\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/include"/>
+					<Add directory="c:\users\workspace\allprojects\plugins\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/include-fixed"/>
+					<Add directory="c:\users\workspace\allprojects\plugins\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ocean/fast"/>
+					<CompileFile command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/WorkSpace/AllProjects/Plugins/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/main.cpp">
+			<Option target="Ocean"/>
+		</Unit>
+		<Unit filename="C:/Users/WorkSpace/AllProjects/CLionProjects/Ocean/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

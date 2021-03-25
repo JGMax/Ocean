@@ -1,0 +1,4 @@
+ToolSet: w64 3.3 (local)@C:\Users\WorkSpace\AllProjects\Plugins\MinGW
+Options: 
+
+Options:
