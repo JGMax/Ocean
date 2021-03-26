@@ -14,14 +14,17 @@ bool Predator::isHungry() const {
 }
 
 bool Predator::isVeryHungry() const {
-    return satiety < double(size) / 10;
+    return satiety < double(size) / 100;
 }
 
 void Predator::live() {
-    decreaseSatiety();
-    Prey::live();
-    if(satiety < double(size) / 10000) {
-        cell->killMe();
+    if (isAlive()) {
+        if (satiety < double(size) / 10000) {
+            death();
+            return;
+        }
+        decreaseSatiety();
+        Prey::live();
     }
 }
 
@@ -61,7 +64,7 @@ void Predator::move() {
             food = preyCells;
         }
     } else {
-        food = uniteVectors(preyCells, emptyCells);
+        food = emptyCells;  // uniteVectors(preyCells, emptyCells);
     }
 
     if(!food.empty()) {
@@ -90,19 +93,20 @@ bool Predator::isPrey(Cell *cell) {
 void Predator::eat(Cell* dest, bool hasFriends) {
     if (dest->getType() == PREY || dest->getType() == PREDATOR) {
         if (dest->getType() == PREDATOR) {
-            if (getRandom(2)) {
-                eat(dest->getObject());
-                dest->killMe();
+            Cell* strongestPredator = roulette(cell, dest);
+            if (strongestPredator == cell) {
+                ((Predator*)strongestPredator->getObject())->eat(dest);
             } else {
-                ((Predator*)dest->getObject())->eat(this);
-                cell->killMe();
+                ((Predator*)strongestPredator->getObject())->eat(cell);
                 return;
             }
         } else {
-            eat(dest->getObject());
-            dest->killMe();
+            eat(dest);
         }
     }
+
+    Cell* previousCell = cell;
+    changeCell(dest);
 
     if (doReproduction(PREDATOR_REPRODUCTION_CYCLE)) {
         int minSize = 1;
@@ -110,16 +114,47 @@ void Predator::eat(Cell* dest, bool hasFriends) {
         if (hasFriends) {
             minSize = getRandom(MAX_PREDATOR_SIZE / 2);
         }
-        Object* object = new Predator(cell, minSize);
-        cell->setObject(object);
-        cell->addToStuff(object);
-    } else {
-        cell->clearMe();
+        Object* object = new Predator(previousCell, minSize);
+        previousCell->setObject(object);
+        previousCell->addToStuff(object);
     }
-
-    changeCell(dest);
 }
 
-void Predator::eat(Object* object) {
-    satiety += object->getSize() * FOOD_EFFECTIVENESS;
+void Predator::eat(Cell* cell) {
+    satiety += cell->getObject()->getSize() * FOOD_EFFECTIVENESS;
+    cell->getObject()->death();
+}
+
+Cell *Predator::minPredator(Cell *cell1, Cell *cell2) {
+    if (cell1->getObject()->getSize() > cell2->getObject()->getSize()) {
+        return cell2;
+    } else {
+        return cell1;
+    }
+}
+
+Cell *Predator::roulette(Cell *predator1, Cell *predator2) {
+    Cell* max = maxPredator(predator1, predator2);
+    Cell* min = minPredator(predator1, predator2);
+    int sizeMin = min->getObject()->getSize();
+    int sizeMax = max->getObject()->getSize();
+
+    int roulette = getRandom(sizeMin + sizeMax);
+
+    if (roulette < sizeMin) {
+        return min;
+    } else {
+        return max;
+    }
+}
+
+Cell *Predator::maxPredator(Cell *cell1, Cell *cell2) {
+    if (cell1->getType() == NOTHING) {
+        return cell1;
+    }
+    if (cell1->getObject()->getSize() > cell2->getObject()->getSize()) {
+        return cell1;
+    } else {
+        return cell2;
+    }
 }

@@ -6,6 +6,8 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <conio.h>
+#include <accctrl.h>
 #include "Ocean.h"
 #include "Stone.h"
 #include "Prey.h"
@@ -13,7 +15,7 @@
 
 Ocean::Ocean() {
     makeOcean();
-    setSpecies();
+    createSpecies();
 }
 
 void Ocean::makeOcean() {
@@ -26,8 +28,7 @@ void Ocean::makeOcean() {
     }
 }
 
-void Ocean::setSpecies() {
-    //todo fix species creation
+void Ocean::createSpecies() {
     std::map<objectType, int> species = {{STONE, STONE_DEFAULT_POPULATION},
                                           {PREY, PREY_DEFAULT_POPULATION},
                                           {PREDATOR, PREDATOR_DEFAULT_POPULATION}};
@@ -103,7 +104,7 @@ Object *Ocean::getObject(objectType type, Cell* cell) {
 }
 
 void Ocean::printOcean() const {
-    system("cls");
+    setCursor(0, 0);
     std::cout << "Ocean (" << step << " step)" << std::endl;
     for (int i = 0; i < OCEAN_Y_SIZE; i++) {
         for (int j = 0; j < OCEAN_X_SIZE; j++) {
@@ -121,7 +122,6 @@ void Ocean::clearStuff() {
         clear = false;
         for (const auto &object : stuff) {
             if (!object->isAlive()) {
-                object->getCell()->killMe();
                 delete object;
                 stuff.erase(i);
                 clear = true;
@@ -176,7 +176,13 @@ Cell *Ocean::getCell(Pair crd) {
 void Ocean::run() {
     bool run = true;
 
+    clearStuff();
+    printOcean();
+    std::map<std::string, int> stats = calcStuff();
+    printStats(stats);
+
     while (run) {
+        //_sleep(1000);
         step++;
         for (auto& i : stuff) {
             i->live();
@@ -186,15 +192,12 @@ void Ocean::run() {
         std::map<std::string, int> stats = calcStuff();
         printStats(stats);
 
-        for (const auto& i : stats) {
-            if (i.second == 0) {
+        if (stats["Predator"] == 0) {
                 run = false;
-            }
         }
-        
-        _sleep(1000);
     }
     std::cout << "Stop" << std:: endl;
+    _getch();
 }
 
 void Ocean::printStats(std::map<std::string, int> stats) {
@@ -207,3 +210,9 @@ void Ocean::printStats(std::map<std::string, int> stats) {
 void Ocean::addToStuff(Object *object) {
     stuff.push_back(object);
 }
+
+void Ocean::setCursor(short x, short y) {
+    COORD coord = {x, y};
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
+

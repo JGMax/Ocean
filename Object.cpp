@@ -15,7 +15,9 @@ objectType Object::getType() const {
 }
 
 void Object::changeCell(Cell *cell) {
+    this->cell->clearMe();
     cell->setObject(this);
+    this->cell = cell;
 }
 
 Cell *Object::getCell() const {
@@ -64,7 +66,11 @@ int Object::getSize() const {
 }
 
 void Object::death() {
-    alive = false;
+    if(isAlive()) {
+        cell->killMe();
+        cell = nullptr;
+        alive = false;
+    }
 }
 
 bool Object::isAlive() const {

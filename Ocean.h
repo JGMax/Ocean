@@ -23,14 +23,14 @@ class Ocean {
     Cell **cells;
     std::list<Object*> stuff;
     void makeOcean();
-    void setSpecies();
+    void createSpecies();
     static int getRandom(int max);
     std::vector<Cell*> getEmptyCells() const;
     static Object* getObject(objectType type, Cell* cell);
     void clearStuff();
     std::map<std::string, int> calcStuff() const;
     static void printStats(std::map<std::string, int> stats) ;
-
+    static void setCursor(short x, short y);
  public:
     Ocean();
     ~Ocean();

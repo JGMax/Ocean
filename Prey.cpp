@@ -12,11 +12,14 @@ Prey::Prey(Cell *cell, int minSize) : Object(PREY, cell) {
 }
 
 void Prey::live() {
-    increaseAge();
-    reproductionCycle++;
-    move();
-    if(!checkAge()) {
-        cell->killMe();
+    if (isAlive()) {
+        if (!checkAge()) {
+            death();
+            return;
+        }
+        increaseAge();
+        reproductionCycle++;
+        move();
     }
 }
 
@@ -57,20 +60,19 @@ bool Prey::doReproduction(int cycle) {
 }
 
 void Prey::makeStep(Cell* dest, bool doReproduction, bool hasFriends) {
+    Cell* previousCell = cell;
+    changeCell(dest);
+
     if (doReproduction) {
         int minSize = 1;
         if (hasFriends) {
             minSize = getRandom(MAX_PREY_SIZE / 2);
         }
 
-        Object* object = new Prey(cell, minSize);
-        cell->setObject(object);
-        cell->addToStuff(object);
-    } else {
-        cell->clearMe();
+        Object* object = new Prey(previousCell, minSize);
+        previousCell->setObject(object);
+        previousCell->addToStuff(object);
     }
-
-    changeCell(dest);
 }
 
 bool Prey::isFriend(Cell *cell) const {

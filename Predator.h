@@ -20,7 +20,10 @@ class Predator : public Prey {
     static std::vector<Cell*> uniteVectors(std::vector<Cell*> vector1,
                                            std::vector<Cell*> vector2);
     void decreaseSatiety();
-    void eat(Object* object);
+    void eat(Cell* cell);
+    static Cell* minPredator(Cell* cell1, Cell* cell2);
+    static Cell* maxPredator(Cell* cell1, Cell* cell2);
+    static Cell* roulette(Cell* predator1, Cell* predator2);
  public:
     explicit Predator(Cell* cell, int minSize = 1) : Prey(cell) {
         type = PREDATOR;

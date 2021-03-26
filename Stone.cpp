@@ -5,9 +5,11 @@
 #include "Stone.h"
 
 void Stone::live() {
-    increaseAge();
-    if (!checkAge()) {
-        cell->killMe();
+    if(isAlive()) {
+        increaseAge();
+        if (!checkAge()) {
+            death();
+        }
     }
 }
 

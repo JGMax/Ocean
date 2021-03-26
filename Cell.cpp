@@ -11,10 +11,8 @@ Object *Cell::getObject() const {
 
 void Cell::setObject(Object *object) {
     if (object != nullptr) {
-        clearMe();
         this->object = object;
         this->type = object->getType();
-        object->cell = this;
     }
 }
 
@@ -22,11 +20,14 @@ void Cell::killMe() {
     if (type == NOTHING) {
         return;
     }
-    object->death();
+
+    object->alive = false;
+    object->cell = nullptr;
 
     if (killedObjects >= PILED_BODY) {
         type = STONE;
         object = new Stone(this);
+        addToStuff(object);
         killedObjects = 0;
     } else {
         if (type != STONE) {
