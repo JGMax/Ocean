@@ -1,6 +1,4 @@
-//
-// Created by WorkSpace on 25.03.2021.
-//
+// Copyright JMax 2021
 
 #include <ctime>
 #include <iostream>
@@ -182,7 +180,6 @@ void Ocean::run() {
     printStats(stats);
 
     while (run) {
-        //_sleep(1000);
         step++;
         for (auto& i : stuff) {
             i->live();

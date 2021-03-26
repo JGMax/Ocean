@@ -1,9 +1,7 @@
-//
-// Created by WorkSpace on 25.03.2021.
-//
+// Copyright JMax 2021
 
-#ifndef OCEAN_OCEAN_H
-#define OCEAN_OCEAN_H
+#ifndef INCLUDE_OCEAN_H_
+#define INCLUDE_OCEAN_H_
 
 #include "Common.h"
 #include "Cell.h"
@@ -31,6 +29,7 @@ class Ocean {
     std::map<std::string, int> calcStuff() const;
     static void printStats(std::map<std::string, int> stats) ;
     static void setCursor(short x, short y);
+
  public:
     Ocean();
     ~Ocean();
@@ -40,4 +39,4 @@ class Ocean {
     void addToStuff(Object* object);
 };
 
-#endif //OCEAN_OCEAN_H
+#endif  // INCLUDE_OCEAN_H_

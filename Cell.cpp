@@ -1,6 +1,4 @@
-//
-// Created by WorkSpace on 25.03.2021.
-//
+// Copyright JMax 2021
 
 #include "Cell.h"
 #include "Stone.h"

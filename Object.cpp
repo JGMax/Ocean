@@ -1,6 +1,4 @@
-//
-// Created by WorkSpace on 25.03.2021.
-//
+// Copyright JMax 2021
 
 #include <ctime>
 #include <iostream>
@@ -18,10 +16,6 @@ void Object::changeCell(Cell *cell) {
     this->cell->clearMe();
     cell->setObject(this);
     this->cell = cell;
-}
-
-Cell *Object::getCell() const {
-    return cell;
 }
 
 void Object::increaseAge() {

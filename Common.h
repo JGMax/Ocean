@@ -1,11 +1,9 @@
-//
-// Created by WorkSpace on 25.03.2021.
-//
+// Copyright JMax 2021
 
-#ifndef OCEAN_COMMON_H
-#define OCEAN_COMMON_H
+#ifndef INCLUDE_COMMON_H_
+#define INCLUDE_COMMON_H_
 
-#define PILED_BODY 10
+#define PILED_BODY 50
 
 #define PREY_SMALL_SYMBOL 'o'
 #define PREY_LARGE_SYMBOL 'O'
@@ -40,4 +38,4 @@ struct Pair {
     int y;
 };
 
-#endif //OCEAN_COMMON_H
+#endif  // INCLUDE_COMMON_H_

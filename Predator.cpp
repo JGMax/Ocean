@@ -1,7 +1,4 @@
-//
-// Created by WorkSpace on 25.03.2021.
-//
-
+// Copyright JMax 2021
 #include <vector>
 #include "Predator.h"
 
@@ -149,9 +146,6 @@ Cell *Predator::roulette(Cell *predator1, Cell *predator2) {
 }
 
 Cell *Predator::maxPredator(Cell *cell1, Cell *cell2) {
-    if (cell1->getType() == NOTHING) {
-        return cell1;
-    }
     if (cell1->getObject()->getSize() > cell2->getObject()->getSize()) {
         return cell1;
     } else {

@@ -1,38 +1,42 @@
-//
-// Created by WorkSpace on 25.03.2021.
-//
+// Copyright JMax 2021
 
-#ifndef OCEAN_OBJECT_H
-#define OCEAN_OBJECT_H
+#ifndef INCLUDE_OBJECT_H_
+#define INCLUDE_OBJECT_H_
 #include "Common.h"
 #include "Cell.h"
 
 class Cell;
 class Object {
     friend Cell;
+
  protected:
     Cell* cell;
     objectType type;
-    int age = 0;
-    int size = 0;
-    bool alive = true;
+    int age;
+    int size;
+    bool alive;
     void increaseAge();
     bool checkAge() const;
     static int getRandom(int max);
+
  private:
     char getSymbolByAging(char ifTrue, char ifFalse) const;
+
  public:
-    Object(objectType type, Cell* cell) : type(type), cell(cell) { };
+    Object(objectType type, Cell* cell) : type(type), cell(cell) {
+        age = 0;
+        size = 0;
+        alive = true;
+    };
     virtual ~Object();
 
     virtual void live() = 0;
     objectType getType() const;
     void changeCell(Cell* cell);
-    Cell* getCell() const;
     void death();
     bool isAlive() const;
     char getSymbol();
     int getSize() const;
 };
 
-#endif //OCEAN_OBJECT_H
+#endif  // INCLUDE_OBJECT_H_

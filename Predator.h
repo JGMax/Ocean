@@ -1,9 +1,7 @@
-//
-// Created by WorkSpace on 25.03.2021.
-//
+// Copyright JMax 2021
 
-#ifndef OCEAN_PREDATOR_H
-#define OCEAN_PREDATOR_H
+#ifndef INCLUDE_PREDATOR_H_
+#define INCLUDE_PREDATOR_H_
 
 #include "Prey.h"
 #include "Common.h"
@@ -24,6 +22,7 @@ class Predator : public Prey {
     static Cell* minPredator(Cell* cell1, Cell* cell2);
     static Cell* maxPredator(Cell* cell1, Cell* cell2);
     static Cell* roulette(Cell* predator1, Cell* predator2);
+
  public:
     explicit Predator(Cell* cell, int minSize = 1) : Prey(cell) {
         type = PREDATOR;
@@ -32,4 +31,4 @@ class Predator : public Prey {
     void live() override;
 };
 
-#endif //OCEAN_PREDATOR_H
+#endif  // INCLUDE_PREDATOR_H_
