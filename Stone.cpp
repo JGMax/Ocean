@@ -3,7 +3,7 @@
 #include "Stone.h"
 
 void Stone::live() {
-    if(isAlive()) {
+    if (isAlive()) {
         increaseAge();
         if (!checkAge()) {
             death();

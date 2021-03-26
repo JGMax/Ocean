@@ -2,15 +2,14 @@
 
 #ifndef INCLUDE_OCEAN_H_
 #define INCLUDE_OCEAN_H_
-
-#include "Common.h"
-#include "Cell.h"
-#include "Object.h"
-
 #include <vector>
 #include <string>
 #include <map>
 #include <list>
+
+#include "Common.h"
+#include "Cell.h"
+#include "Object.h"
 
 class Cell;
 class Object;
@@ -27,7 +26,7 @@ class Ocean {
     static Object* getObject(objectType type, Cell* cell);
     void clearStuff();
     std::map<std::string, int> calcStuff() const;
-    static void printStats(std::map<std::string, int> stats) ;
+    static void printStats(std::map<std::string, int> stats);
     static void setCursor(short x, short y);
 
  public:

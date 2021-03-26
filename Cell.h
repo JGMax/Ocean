@@ -1,9 +1,6 @@
-//
-// Created by WorkSpace on 25.03.2021.
-//
-
-#ifndef OCEAN_CELL_H
-#define OCEAN_CELL_H
+// Copyright JMax 2021
+#ifndef INCLUDE_CELL_H_
+#define INCLUDE_CELL_H_
 
 #include "Common.h"
 #include "Object.h"
@@ -13,12 +10,14 @@ class Ocean;
 
 class Cell {
     friend Ocean;
+
  private:
     Pair crd;
     Object *object;
     objectType type;
     int killedObjects = 0;
     Ocean *ocean;
+
  public:
     explicit Cell(Pair crd = {0, 0}, Ocean* ocean = nullptr) :
             crd(crd),
@@ -38,4 +37,4 @@ class Cell {
     ~Cell();
 };
 
-#endif //OCEAN_CELL_H
+#endif  // INCLUDE_CELL_H_

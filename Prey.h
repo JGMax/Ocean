@@ -3,10 +3,11 @@
 #ifndef INCLUDE_PREY_H_
 #define INCLUDE_PREY_H_
 
+#include <vector>
+
 #include "Common.h"
 #include "Object.h"
 #include "Cell.h"
-
 
 class Prey : public Object {
  protected:
@@ -16,7 +17,7 @@ class Prey : public Object {
     virtual void move();
     bool doReproduction(int cycle = PREY_REPRODUCTION_CYCLE);
     void makeStep(Cell* dest, bool doReproduction, bool hasFriends);
-    static Cell* getCell(std::vector<Cell*>& availableCells);
+    static Cell* getCell(const std::vector<Cell*>& availableCells);
 
  public:
     explicit Prey(Cell* cell, int minSize = 1);
